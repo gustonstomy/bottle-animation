@@ -72,7 +72,7 @@ export default function Page() {
             </button>
           </div>
         </div>
-        <div className="absolute left-[25%] top-[22rem]">
+        <div className="absolute left-[20%] 2xl:left-[25%]  top-[22rem]">
           <div
             className={`flex flex-col gap-0 items-center transition-all duration-2000 ${
               fadeOut
@@ -139,7 +139,7 @@ export default function Page() {
 
       <div className={``}>
         <div
-          className={`absolute z-10 top-[49%] sm:top-[45%] md:top-[45%] xl:top-[50%] 2xl:top-[36%]  left-[47%] md:left-[45.5%] xl:left-[44.8%] transition-all duration-4000  ${
+          className={`absolute z-10 top-[49%] sm:top-[45%] md:top-[45%] xl:top-[45%] 2xl:top-[36%]  left-[47%] md:left-[45.5%] xl:left-[44.8%] transition-all duration-4000  ${
             fullBottleUp && "animate-move-all-up "
           } ${isAnimating ? "animate-move-up" : ""} ${
             isAnimatingDown ? "animate-move-top-down" : ""
@@ -149,7 +149,7 @@ export default function Page() {
         </div>
 
         <div
-          className={`absolute sm:-bottom-70 md:-bottom-70 lg:-bottom-70 md:-bottom-10  2xl:-bottom-40 left-[42%] md:left-[42.5%] xl:left-[43%] transition-all duration-4000  ${
+          className={`absolute sm:-bottom-70 md:-bottom-70 lg:-bottom-70  2xl:-bottom-40 left-[42%] md:left-[42.5%] xl:left-[43%] transition-all duration-4000  ${
             fullBottleUp && "animate-move-all-up "
           } ${
             isAnimatingDown
