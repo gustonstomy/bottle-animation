@@ -9,34 +9,34 @@ export default function Page() {
   const [fadeOut, setFadeOut] = useState(false);
   const [fullBottleUp, setullBottleUp] = useState(false);
 
-  // useEffect(() => {
-  //   const animtationSequence = () => {
-  //     setIsAnimating(false);
-  //     setIsAnimatingDown(false);
+  useEffect(() => {
+    const animtationSequence = () => {
+      setIsAnimating(false);
+      setIsAnimatingDown(false);
 
-  //     setTimeout(() => {
-  //       setIsAnimating(true);
-  //     }, 1000);
+      setTimeout(() => {
+        setIsAnimating(true);
+      }, 1000);
 
-  //     setTimeout(() => {
-  //       setIsAnimatingDown(true);
-  //     }, 3000);
+      setTimeout(() => {
+        setIsAnimatingDown(true);
+      }, 3000);
 
-  //     setTimeout(() => {
-  //       setFadeOut(true);
-  //     }, 5000);
+      setTimeout(() => {
+        setFadeOut(true);
+      }, 5000);
 
-  //     setTimeout(() => {
-  //       setullBottleUp(true);
-  //     }, 5500);
-  //   };
+      setTimeout(() => {
+        setullBottleUp(true);
+      }, 5500);
+    };
 
-  //   animtationSequence();
+    animtationSequence();
 
-  //   const intervalId = setInterval(animtationSequence, 7000);
+    const intervalId = setInterval(animtationSequence, 7000);
 
-  //   return () => clearInterval(intervalId);
-  // }, []);
+    return () => clearInterval(intervalId);
+  }, []);
 
   return (
     <div className=" h-[100dvh] no-scrollbar overflow-hidden">
@@ -149,7 +149,7 @@ export default function Page() {
         </div>
 
         <div
-          className={`absolute sm:-bottom-70  lg:-bottom-70 2xl:-bottom-40 left-[42%] xl:left-[43%] transition-all duration-4000  ${
+          className={`absolute sm:-bottom-70 md:-bottom-70 lg:-bottom-70 md:-bottom-10  2xl:-bottom-40 left-[42%] md:left-[42.5%] xl:left-[43%] transition-all duration-4000  ${
             fullBottleUp && "animate-move-all-up "
           } ${
             isAnimatingDown
