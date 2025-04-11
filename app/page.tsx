@@ -9,34 +9,34 @@ export default function Page() {
   const [fadeOut, setFadeOut] = useState(false);
   const [fullBottleUp, setullBottleUp] = useState(false);
 
-  useEffect(() => {
-    const animtationSequence = () => {
-      setIsAnimating(false);
-      setIsAnimatingDown(false);
+  // useEffect(() => {
+  //   const animtationSequence = () => {
+  //     setIsAnimating(false);
+  //     setIsAnimatingDown(false);
 
-      setTimeout(() => {
-        setIsAnimating(true);
-      }, 1000);
+  //     setTimeout(() => {
+  //       setIsAnimating(true);
+  //     }, 1000);
 
-      setTimeout(() => {
-        setIsAnimatingDown(true);
-      }, 3000);
+  //     setTimeout(() => {
+  //       setIsAnimatingDown(true);
+  //     }, 3000);
 
-      setTimeout(() => {
-        setFadeOut(true);
-      }, 5000);
+  //     setTimeout(() => {
+  //       setFadeOut(true);
+  //     }, 5000);
 
-      setTimeout(() => {
-        setullBottleUp(true);
-      }, 5500);
-    };
+  //     setTimeout(() => {
+  //       setullBottleUp(true);
+  //     }, 5500);
+  //   };
 
-    animtationSequence();
+  //   animtationSequence();
 
-    const intervalId = setInterval(animtationSequence, 7000);
+  //   const intervalId = setInterval(animtationSequence, 7000);
 
-    return () => clearInterval(intervalId);
-  }, []);
+  //   return () => clearInterval(intervalId);
+  // }, []);
 
   return (
     <div className=" h-[100dvh] no-scrollbar overflow-hidden">
@@ -139,7 +139,7 @@ export default function Page() {
 
       <div className={``}>
         <div
-          className={`absolute z-10 top-[36%]  left-[44.6%] transition-all duration-4000  ${
+          className={`absolute z-10 top-[49%] sm:top-[45%] md:top-[45%] xl:top-[50%] 2xl:top-[36%]  left-[47%] md:left-[45.5%] xl:left-[44.8%] transition-all duration-4000  ${
             fullBottleUp && "animate-move-all-up "
           } ${isAnimating ? "animate-move-up" : ""} ${
             isAnimatingDown ? "animate-move-top-down" : ""
@@ -149,7 +149,7 @@ export default function Page() {
         </div>
 
         <div
-          className={`absolute   -bottom-40 left-[43%] transition-all duration-4000  ${
+          className={`absolute sm:-bottom-70  lg:-bottom-70 2xl:-bottom-40 left-[42%] xl:left-[43%] transition-all duration-4000  ${
             fullBottleUp && "animate-move-all-up "
           } ${
             isAnimatingDown
