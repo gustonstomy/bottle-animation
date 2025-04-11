@@ -39,9 +39,9 @@ export default function Page() {
   }, []);
 
   return (
-    <div className=" h-screen no-scrollbar">
+    <div className=" h-[100dvh] no-scrollbar overflow-hidden">
       <main
-        className={`relative h-[100dvh] bg-[#032427] transition-transform duration-2000  no-scrollbar ${
+        className={`relative h-[100dvh]  overflow-hidden bg-[#032427] transition-transform duration-2000  no-scrollbar ${
           isAnimatingDown ? "-translate-y-full" : ""
         } ${fadeOut ? "translate-y-0" : ""}`}
       >
